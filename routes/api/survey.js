@@ -1,6 +1,5 @@
 const express=require('express');
 const router=express.Router();
-//@route get api/users
 const jwt=require('jsonwebtoken');
 const Survey=require('../../models/Survey')
 const {check,validationResult}=require('express-validator');

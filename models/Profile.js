@@ -1,33 +1,32 @@
-const mongoose = require('mongoose');
-
+const mongoose = require("mongoose");
 const ProfileSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'user'
+    ref: "user",
   },
   company: {
-    type: String
+    type: String,
   },
   website: {
-    type: String
+    type: String,
   },
   location: {
-    type: String
+    type: String,
   },
   status: {
     type: String,
-    required: true
+    required: true,
   },
   skills: {
     type: [String],
-    required: true
+    required: true,
   },
   bio: {
-    type: String
+    type: String,
   },
   githubusername: {
-    type: String
-  } 
+    type: String,
+  },
 });
 
-module.exports = mongoose.model('profile', ProfileSchema);
+module.exports = mongoose.model("profile", ProfileSchema);

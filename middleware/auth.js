@@ -17,5 +17,4 @@ try{
     catch(err){
     res.status(401).json({msg:'Token is wrong',isExp:true});
     }
-
 }
